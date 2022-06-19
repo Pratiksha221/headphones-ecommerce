@@ -11,8 +11,15 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
-      <p className="logo">
+      <p className="logo navbar-items">
         <Link href="/">PV Store Headphones</Link>
+        
+      </p>
+      <p className="navbar-items ">
+      <Link href="/about-us">ABOUT US </Link>
+      </p>
+      <p className="navbar-items ">
+      <Link href="/contact-us">CONTACT</Link>
       </p>
 
       <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>

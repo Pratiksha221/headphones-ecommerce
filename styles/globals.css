@@ -64,11 +64,12 @@ width: 100%;
     -webkit-text-stroke: 1px #f02d34;
     margin-left: 6px;
 }
-.logo{
+.logo , .navbar-items{
   color: gray;
   font-size: 18px;
 
 }
+
 .cart-icon{
   font-size: 25px;
   color: gray;

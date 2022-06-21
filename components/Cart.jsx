@@ -33,6 +33,7 @@ const Cart = () => {
   }
 
   return (
+    
     <div className="cart-wrapper" ref={cartRef}>
       <div className="cart-container">
         <button
@@ -62,12 +63,13 @@ const Cart = () => {
 
         <div className="product-container">
           {cartItems.length >= 1 && cartItems.map((item) => (
+            
             <div className="product" key={item._id}>
               <img src={urlFor(item?.image[0])} className="cart-product-image" />
               <div className="item-desc">
                 <div className="flex top">
                   <h5>{item.name}</h5>
-                  <h4>${item.price}</h4>
+                  <h4>₹ {item.price}</h4>
                 </div>
                 <div className="flex bottom">
                   <div>
@@ -95,7 +97,7 @@ const Cart = () => {
           <div className="cart-bottom">
             <div className="total">
               <h3>Subtotal:</h3>
-              <h3>${totalPrice}</h3>
+              <h3>₹{totalPrice}</h3>
             </div>
             <div className="btn-container">
               <button type="button" className="btn" onClick={handleCheckout}>

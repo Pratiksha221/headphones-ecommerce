@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { AiOutlineShopping } from 'react-icons/ai'
+import { AiOutlineShopping , AiFillHeart } from 'react-icons/ai'
 
 
 import  Cart  from './Cart';
@@ -12,11 +12,12 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <p className="logo navbar-items">
-        <Link href="/">PV Store Headphones</Link>
+      
+        <Link href="/">PV Store</Link>
         
       </p>
       <p className="navbar-items ">
-      <Link href="/about-us">ABOUT US </Link>
+      <Link href="/about-us">ABOUT US</Link>
       </p>
       <p className="navbar-items ">
       <Link href="/contact-us">CONTACT</Link>

@@ -6,7 +6,7 @@ import TagManager from "react-gtm-module";
 import { useEffect } from "react";
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    TagManager.initialize({ gtmId: "GTM-WSPVSGL" });
+    TagManager.initialize({ gtmId: "GTM-54W6RXK" });
   }, []);
   return (
     <StateContext>
